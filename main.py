@@ -1,4 +1,3 @@
-from tkinter.tix import WINDOW
 import pygame
 pygame.init()
 
