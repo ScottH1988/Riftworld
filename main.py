@@ -21,7 +21,7 @@ def draw_Window():
     WIN.blit(BACKGROUND, (0,0))
     
 
-    WIN.blit(PUG, (10, 420))
+    WIN.blit(PUG, (10, 360))
     
     pygame.display.update()
 
