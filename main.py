@@ -12,6 +12,13 @@ pygame.display.set_caption("Welcome to Riftwold!")
 icon = pygame.image.load(os.path.join("Riftworld", "assets", "castle.png"))
 pygame.display.set_icon(icon)
 
+# Game background
+background = pygame.transform.scale(pygame.image.load(os.path.join("Riftworld", "assets", "background.png")), (WIDTH, HEIGHT))
+def draw_Window():
+    WIN.blit(background, (0,0))
+    pygame.display.update()
+
+
 
 def main():
     run = True
@@ -21,7 +28,7 @@ def main():
              run = False
              pygame.quit()
 
-    
+draw_Window()    
 
 
 
